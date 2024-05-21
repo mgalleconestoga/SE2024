@@ -8,10 +8,39 @@
 <body>
     <h1>Request Access</h1>
     <form action="req_access.php" method="post">
-        <p>First name: <input type="text" name="firstname"></p>
-        <p>Last name: <input type="text" name="lastname"></p>
 
-        <input type="radio">
+        <fieldset>
+            <legend>Contact Details</legend>
+            <p><label>First name: <input type="text" name="firstname"></label></p>
+            <p><label>Last name: <input type="text" name="lastname"></label></p>
+            <p><label>Email: <input type="email" name="email"></label></p>
+            <p><label>Website: <input type="url" name="url"></label></p>
+            <p><label>Birthdate: <input type="date" name="birthday"></label></p>
+
+            <label><input type="radio" name="fac_or_student" value="faculty" /> Faculty</label>
+            <label><input type="radio" name="fac_or_student" value="student" /> Student</label>
+        </fieldset>
+        
+        <p>Do you drive a car?
+            <select name="drives_car" id="car">
+                <option value="no_anser" selected></option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </p>
+
+        <p>I currently ... (check all that apply)</p>
+        <label><input type="checkbox" name="involvement" value="none"> No involvement </label><br/>
+        <label><input type="checkbox" name="involvement" value="instructor"> Instructor </label><br/>
+        <label><input type="checkbox" name="involvement" value="other_instructor"> Other Instructor </label><br/>
+        <label><input type="checkbox" name="involvement" value="student"> Student </label><br/>
+        <label><input type="checkbox" name="involvement" value="other_student"> Other Student</label><br/>
+        <label><input type="checkbox" name="involvement" value="admin"> Admin</label><br/>
+        <label><input type="checkbox" name="involvement" value="external"> External</label><br/>
+
+        <p>Please tell us about yourself</p>
+        <textarea name="textarea" id="text" rows="30" cols="40"> Well. get going and write something ... </textarea>
+
 
     </form>
 </body>
