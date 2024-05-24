@@ -1,0 +1,33 @@
+input[type="submit"] {
+    height:50px;
+    width:150px;
+    color:rgb(255, 255, 255);
+    background-color: blue;
+}
+
+input[type="submit"]:hover {
+    color: blue;
+    background-color: rgb(255, 255, 255);
+}
+
+input[type="submit"]:active {
+    color: rgb(255, 38, 0);
+    background-color: rgb(234, 234, 23);
+}
+
+
+/* #box {
+    border-width: 3px 2px 3px 2px;
+    border-style: solid dotted dashed dotted;
+    border-color: blue rgb(20,20,20) red #555;
+} 
+*/
+
+#box {
+    border: 3px solid grey;
+    padding: 20px 20px 20px 20px;
+    margin: 40px 0px;
+    box-shadow: 15px 15px 7px rgb(100,100,100);
+    border-radius: 10px;
+}
+

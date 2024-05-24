@@ -1,0 +1,30 @@
+body {
+    font-size: 1.5rem;
+}
+
+li.h_menu { 
+    display: inline;
+}
+
+.menu {
+    text-decoration: none;
+}
+
+/*
+a:link.menu, a:visited.menu {
+    color:rgba(10,10,200);
+    background-color: rgb(221, 221, 221);
+}
+
+
+a:hover.menu {
+    color:rgb(221, 221, 221);
+    background-color: rgba(10,10,200);
+}
+
+a:active.menu {
+    color: #FFF;
+    background-color: orange;
+}
+*/
+

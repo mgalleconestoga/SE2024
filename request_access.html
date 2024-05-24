@@ -7,6 +7,7 @@
     <meta name="robots" content="index follow">
     <meta http-equiv="author" content="Michael"> 
     <meta http-equiv="pragma" content="no-cache"> <!-- Set not to cache during development then remove and allow caching -->
+    <link rel="stylesheet" href="css/req_access.css">
 
     <title>Request Access</title>
 </head>
@@ -34,17 +35,24 @@
             </select>
         </p>
 
-        <p>I currently ... (check all that apply)</p>
-        <label><input type="checkbox" name="involvement" value="none"> No involvement </label><br/>
-        <label><input type="checkbox" name="involvement" value="instructor"> Instructor </label><br/>
-        <label><input type="checkbox" name="involvement" value="other_instructor"> Other Instructor </label><br/>
-        <label><input type="checkbox" name="involvement" value="student"> Student </label><br/>
-        <label><input type="checkbox" name="involvement" value="other_student"> Other Student</label><br/>
-        <label><input type="checkbox" name="involvement" value="admin"> Admin</label><br/>
-        <label><input type="checkbox" name="involvement" value="external"> External</label><br/>
+        <div id="box">
+            <p>I currently ... (check all that apply)</p>
+            <label><input type="checkbox" name="involvement" value="none"> No involvement </label><br/>
+            <label><input type="checkbox" name="involvement" value="instructor"> Instructor </label><br/>
+            <label><input type="checkbox" name="involvement" value="other_instructor"> Other Instructor </label><br/>
+            <label><input type="checkbox" name="involvement" value="student"> Student </label><br/>
+            <label><input type="checkbox" name="involvement" value="other_student"> Other Student</label><br/>
+            <label><input type="checkbox" name="involvement" value="admin"> Admin</label><br/>
+            <label><input type="checkbox" name="involvement" value="external"> External</label><br/>
+        </div>
+        
 
         <p>Please tell us about yourself</p>
-        <textarea name="textarea" id="text" rows="30" cols="40"> Well. get going and write something ... </textarea>
+        <textarea name="textarea" id="text" rows="30" cols="40"> Well. get going and write something ... </textarea><br>
+
+        <input type="submit" value="Request Access" >
+        
+    
     </form>
     <p>Copyright &copy Michael Galle</p>
 </body>
